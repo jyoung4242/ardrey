@@ -63,6 +63,7 @@ class myTestActor extends Actor {
     }
     if (this.vel.x > 0 && this.pos.x > safeArea.right) {
       this.vel.x = 0;
+      console.log("debug: ", this.pos.x, safeArea.left);
     }
     if (this.vel.y < 0 && this.pos.y < safeArea.top) {
       this.vel = Vector.Zero;
